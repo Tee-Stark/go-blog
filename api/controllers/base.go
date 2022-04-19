@@ -32,7 +32,11 @@ func (server *Server) Init(DbDriver, DbUser, DbPass, DbPort, DbHost, DbName stri
 	}
 	// run database migrations automatically
 	server.DB.AutoMigrate(&models.User{}, &models.Post{})
-
+	// add foreign key
+	err = server.DB.Model(&models.Post{}).AddForeignKey("author_id", "users(id)", "cascade", "cascade").Error
+	if err != nil {
+		log.Fatalf("attaching foreign key error: %v", err)
+	}
 	server.Router = mux.NewRouter()
 
 	server.InitializeRoutes()
