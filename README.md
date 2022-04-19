@@ -1,6 +1,6 @@
 # GO-BLOG blogging platform RESTful API service
 
-Just another fun project from me 👻... This is a simple REST API service built for a blogging platform where a anybody can sign-up, and start their own blog by creating a post. The two major models on this platform are the Users and Blog posts... Feel free to check it out and of course, play around it!
+Just another fun project from me 👻... This is a simple REST API service built for a blogging platform where a anybody can sign-up, and start their own blog by creating a post. The two major models on this platform are the Users and Blog posts. I am currently adding more features like cover image upload... Feel free to check it out and of course, play around it!
 
 ### Getting started
 To run this API locally, you must have Go installed on your machine, PostgresSQL is the database used, but you may want to try out other SQL DBMSs. To do this, you would need to tweak the Init() method present in the controllers/base.go file. Not forgetting to install the required gorm dialect package for  whichever DBMS you'd be using. Follow the steps below to get started 👇
