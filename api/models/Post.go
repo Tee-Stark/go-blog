@@ -58,6 +58,19 @@ func (p *Post) SavePost(db *gorm.DB) (*Post, error) {
 	return p, nil
 }
 
+// // funtion to save post cover url to DB after upload
+// func (p *Post) SavePostImage(db *gorm.DB, pid uint64, imgStr string) (string, error) {
+// 	var err error
+// 	if pid <= 0 {
+// 		return "", errors.New("Invalid post ID")
+// 	}
+// 	err = db.Model(&Post{}).Where("id = ?", p.ID).Update("cover_img", imgStr).Error
+// 	if err != nil {
+// 		return "", err
+// 	}
+// 	return p.
+// }
+
 func (p *Post) FindAllPosts(db *gorm.DB) (*[]Post, error) {
 	var err error
 	posts := []Post{}
@@ -66,8 +79,8 @@ func (p *Post) FindAllPosts(db *gorm.DB) (*[]Post, error) {
 		return &[]Post{}, err
 	}
 	if len(posts) > 0 {
-		for _, post := range posts {
-			err := db.Model(&User{}).Where("id = ?", post.AuthorID).Take(&post.Author).Error
+		for i := range posts {
+			err := db.Model(&User{}).Where("id = ?", posts[i].AuthorID).Take(&posts[i].Author).Error
 			if err != nil {
 				return &[]Post{}, err
 			}
