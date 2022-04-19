@@ -24,8 +24,9 @@ Once done, you may now start the Go application by running the command below in 
 
 The above command will run auto-migrations, and get the server running on your specified port.
 
-#### Making Requests (API docs still cooking 🙃)
-kindly bear with me...
+#### Making Requests.
+The complete documentation on how to make requests can be found here: [Go-blog API docs](https://documenter.getpostman.com/view/15116113/Uyr7HyUt).
 
-while I complete the docs and add tests...you can always checkout the code and know your way around, it's very understandable I promise... 💓
+while I add tests and other features...contributions are also welcome...Also reach out to me if you need any help 💓
+
 ### Enjoy !!!
