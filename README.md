@@ -21,3 +21,11 @@ Create a new database with the name and owner as specified in your `DB_NAME` & `
 #### Start the Application
 Once done, you may now start the Go application by running the command below in the project's root directory:
 `go run main.go`
+
+The above command will run auto-migrations, and get the server running on your specified port.
+
+#### Making Requests (API docs still cooking 🙃)
+kindly bear with me...
+
+while I complete the docs and add tests...
+### Enjoy !!!
