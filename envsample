@@ -1,0 +1,8 @@
+PORT=3000
+JWT_SECRET=something_secret
+DB_HOST=127.0.0.1
+DB_DRIVER=postgres
+DB_USER=postgres
+DB_PASSWORD=postgres
+DB_NAME=go_blog
+DB_PORT=5432
