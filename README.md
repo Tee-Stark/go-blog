@@ -27,5 +27,5 @@ The above command will run auto-migrations, and get the server running on your s
 #### Making Requests (API docs still cooking 🙃)
 kindly bear with me...
 
-while I complete the docs and add tests...
+while I complete the docs and add tests...you can always checkout the code and know your way around, it's very understandable I promise... 💓
 ### Enjoy !!!
